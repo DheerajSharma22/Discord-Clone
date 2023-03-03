@@ -1,0 +1,700 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gg sans";
+  overflow-x: hidden;
+}
+
+:root {
+  --bgColor: #404eed;
+  --btnColor: #5865f2;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*************************************** Utility Classes ***************************************/
+.container {
+  padding: 0 5rem;
+}
+
+.primaryBtn {
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 10%);
+  color: var(--btnColor);
+}
+
+.secondaryBtn {
+  background-color: var(--btnColor);
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.secondaryBtn:hover {
+  box-shadow: -10px 10px 20px rgb(0 0 0 / 10%), 10px -10px 20px rgb(0 0 0 / 10%);
+  background-color: var(--bgColor);
+}
+
+.tertiaryBtn {
+  background-color: #23272a;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*************************************** Header ***************************************/
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/bg.svg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--bgColor);
+}
+
+.sideBar {
+  display: none;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 100%;
+}
+
+header .navbar .logo svg {
+  color: white;
+}
+
+header .navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+header .navbar .menu2 {
+  display: none;
+}
+
+header .navbar .menu li,
+header .sideBar .menu2 li {
+  font-size: 1.6rem;
+}
+
+header .navbar .menu li:hover {
+  border-bottom: 1px solid white;
+}
+
+header .sideBar .menu2 li a {
+  color: black;
+}
+
+header .navbar .menu li a {
+  color: white;
+  font-weight: 400;
+}
+
+.hamburgerMenu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hamburgerMenu i {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/*************************************** Hero Section Starts ***************************************/
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.heroContainer h1 {
+  font-size: 8rem;
+  color: white;
+  /* font-family: "Tilt wrap"; */
+  font-weight: bolder;
+}
+
+.heroContainer .heroPara {
+  font-size: 2rem;
+  width: 70%;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+}
+
+.heroContainer .heroBtnDiv {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroContainer .heroBtnDiv button {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+}
+
+.leftImgDiv {
+  background-image: url("../images/bg1.svg");
+  background-size: 100% 100%;
+  width: 60rem;
+  height: 31.5rem;
+  position: absolute;
+  left: -20%;
+  bottom: 0;
+}
+
+.rightImgDiv {
+  background-image: url("../images/bg2.svg");
+  background-size: 100% 100%;
+  width: 60rem;
+  height: 31.5rem;
+  position: absolute;
+  right: -20%;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/*************************************** Section 1 Starts ***************************************/
+#section1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1Container .leftContainer img {
+  width: 100%;
+}
+
+.rightContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightContainer h3 {
+  font-size: 5rem;
+  width: 70%;
+  color: #23272a;
+  margin-bottom: 2rem;
+  line-height: 60px;
+  overflow: hidden;
+}
+
+.rightContainer p {
+  font-size: 2rem;
+  width: 70%;
+}
+
+/*************************************** Section 2 Starts ***************************************/
+#section2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section2 .smLeftContainer {
+  display: none;
+}
+
+/*************************************** Section 3 Starts ***************************************/
+#section3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightContainer {
+  justify-content: center;
+}
+
+/*************************************** Section 4 Starts ***************************************/
+#section4 {
+  width: 100vw;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.section4Container {
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.section4Container img {
+  width: 100%;
+}
+
+.section4Container .section4Heading {
+  font-size: 4.8rem;
+}
+
+.section4Container .section4Para {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #23272a;
+}
+
+.section4Container h4 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.btnDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4Container button {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+
+/*************************************** Footer Starts ***************************************/
+footer {
+  background-color: #23272a;
+  padding: 10rem 10rem 10rem 8rem;
+}
+
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--btnColor);
+  padding: 0 0 2rem 0;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer .footerContainer .firstDiv img {
+  width: 30px;
+}
+
+footer .footerContainer .firstDiv h3 {
+  color: var(--btnColor);
+  font-size: 4rem;
+  line-height: 40px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+footer .footerContainer .firstDiv .countryDiv {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer .footerContainer .firstDiv .countryDiv p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.socialIconDiv {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.socialIconDiv i { 
+  font-size: 2rem;
+  color: white;
+}
+
+.footerCommonDiv .footerCommonHeading {
+  color: var(--btnColor);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footerCommonDiv ul li {
+  color: white;
+  padding: 1rem  0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  
+}
+
+.footerCommonDiv ul li:hover {
+  border-bottom: 1px solid white;
+}
+
+.footerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0 0 0;
+}
+
+.footerFooter .logo svg {
+  color: white;
+}
+
+/*************************************** Responsive Styles ***************************************/
+
+@media (max-width: 1250px) {
+  .rightImgDiv {
+    right: -20%;
+  }
+  .leftImgDiv {
+    left: -25%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .leftImgDiv {
+    left: -35%;
+  }
+  .rightImgDiv {
+    right: -35%;
+  }
+
+  /* Section 1 starts */
+  .rightContainer h3 {
+    font-size: 4rem;
+    width: 70%;
+    line-height: 40px;
+  }
+
+  .rightContainer p {
+    font-size: 2rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Navbar Code Starts */
+  .menu {
+    display: none !important;
+  }
+
+  .activeSideBar {
+    display: block;
+    transition: 0.3s all linear;
+  }
+
+  .menu2 {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    padding: 2rem 3rem;
+    background-color: white;
+    gap: 0.1rem;
+    height: 100vh;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    z-index: 10;
+  }
+  .sidebarHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e4e4 !important;
+    padding: 1rem 0 2rem 0;
+    margin-bottom: 1rem;
+  }
+  .sidebarHead i {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  header .sideBar .menu2 li {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  header .sideBar .menu2 li.active {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #f6f6f6;
+  }
+
+  header .sideBar .menu2 li.active a {
+    color: #00bef4 !important;
+  }
+  header .sideBar .menu2 button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+  }
+  .hamburgerMenu i {
+    display: block;
+  }
+
+  /* Navbar Code Ends */
+
+  /* Hero Section Starts */
+  .leftImgDiv {
+    display: none;
+  }
+
+  .rightImgDiv {
+    right: -23%;
+  }
+
+  .heroContainer {
+    align-items: flex-start;
+    height: 80vh;
+  }
+
+  .heroContainer h1 {
+    width: 50%;
+    font-size: 6rem;
+  }
+  .heroContainer .heroPara {
+    text-align: start;
+    font-size: 1.8rem;
+  }
+
+  .heroContainer .heroBtnDiv {
+    flex-direction: column;
+  }
+
+  .leftImgDiv {
+    display: none;
+  }
+
+  .rightImgDiv {
+    right: -23%;
+  }
+  /* Hero Section Ends */
+
+  /* Section 4 Starts */
+  .section4Container .section4Heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0rem 3rem;
+  }
+  .heroContainer {
+    height: 50vh;
+  }
+  .heroContainer h1 {
+    width: 100%;
+    font-size: 4.5rem;
+  }
+
+  .heroPara {
+    width: 100% !important;
+    text-align: justify !important;
+    font-size: 1.6rem;
+  }
+  .heroBtnDiv {
+    flex-direction: row !important;
+  }
+
+  .heroBtnDiv button {
+    flex-direction: row !important;
+    font-size: 1.6rem !important;
+  }
+
+  .rightImgDiv {
+    display: none;
+  }
+
+  .leftImgDiv {
+    display: block;
+    left: 0%;
+    width: 50rem;
+    height: 25rem;
+  }
+
+  /* Section 1 Starts */
+  .section1Container {
+    grid-template-columns: 1fr;
+  }
+
+  .section1Container .rightContainer h3 {
+    font-size: 2.5rem;
+  }
+
+  .section1Container .rightContainer p {
+    font-size: 1.6rem;
+  }
+
+  .section1Container .rightContainer h3,
+  .section1Container .rightContainer p {
+    width: 100%;
+  }
+
+  /* Section 2 Starts */
+  #section2 .leftContainer {
+    display: none;
+  }
+  #section2 .smLeftContainer {
+    display: block;
+  }
+
+  #section2 .smLeftContainer img {
+    width: 100%;
+  }
+
+  /* Section 4 Starts */
+  .section4Container .section4Heading {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 630px) {
+  /* header {
+    height: 120vh;
+  } */
+  /* .heroContainer {
+      height: 80vh;
+    } */
+
+  .heroContainer h1 {
+    font-size: 3rem;
+  }
+
+  .heroPara {
+    font-size: 1.4rem !important;
+    line-height: 25px !important;
+  }
+  .heroBtnDiv {
+    flex-direction: column !important;
+  }
+
+  .leftImgDiv {
+    display: block;
+    left: 0%;
+    bottom: 0% !important;
+    width: 50rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .hamburgerMenu button {
+    display: none;
+  }
+
+  .leftImgDiv {
+    display: block;
+    left: -15%;
+    bottom: 0% !important;
+    width: 50rem;
+    height: 25rem;
+  }
+
+  .section1Container .rightContainer h3 {
+    font-size: 2rem;
+  }
+
+  .section1Container .rightContainer p {
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+
+  .section1Container .rightContainer h3,
+  .section1Container .rightContainer p {
+    width: 100%;
+  }
+
+  /* Section 4 Starts */
+  .section4Container .section4Heading {
+    font-size: 2.8rem;
+  } 
+  .section4Container .section4Para {
+    font-size: 1.8rem;
+  } 
+
+  /* Footer */
+  footer {
+    padding: 10rem 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    height: 80vh;
+  }
+  .leftImgDiv {
+    display: none;
+  }
+}
+
+@media (max-width: 280px) {
+  .sideBar {
+    width: 100vw !important;
+  }
+}
